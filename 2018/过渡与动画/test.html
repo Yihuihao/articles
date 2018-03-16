@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+
+<!--弹跳动画-->
+<section class="transform_animate">
+    <style>
+        .transform > div.ball {
+            /*尺寸样式、颜色样式等*/
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(#fb3 , #ff4);
+            /*animation: bounce 3s ease-in;!*上升时减速*!*/
+            animation: bounce 3s cubic-bezier(.1,.25,1,.25);
+        }
+
+        @keyframes bounce {
+            60%,80%,to{
+                -webkit-transform: translateY(350px);
+                -moz-transform: translateY(350px);
+                -ms-transform: translateY(350px);
+                -o-transform: translateY(350px);
+                transform: translateY(350px);
+                /*下落的过程是加速的*/
+                /*-webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;*/
+                -webkit-animation-timing-function: ease;
+                -moz-animation-timing-function: ease;
+                -o-animation-timing-function: ease;
+                animation-timing-function: ease;
+            }
+            70% {
+                -webkit-transform: translateY(250px);
+                -moz-transform: translateY(250px);
+                -ms-transform: translateY(250px);
+                -o-transform: translateY(250px);
+                transform: translateY(250px);
+            }
+            90% {
+                -webkit-transform: translateY(300px);
+                -moz-transform: translateY(300px);
+                -ms-transform: translateY(300px);
+                -o-transform: translateY(300px);
+                transform: translateY(300px);
+            }
+        }
+    </style>
+    <article class="transform">
+        <div class="ball"></div>
+    </article>
+</section>
+
+<!--弹性过渡-->
+<section class="transition_animate">
+    <style>
+        input:not(:focus) + .callout {
+            transform: scale(0);
+            color: red;
+            transition-timing-function: ease;
+        }
+        .callout {
+            display: inline-block;
+            /*transition: .5s transform;*/
+            transition: .5s cubic-bezier(.25,.1,.3,1.5);
+            transform-origin: 1.4em -.4em;
+        }
+    </style>
+    <article>
+        <form>
+            <label for="username">
+                Your username: <input type="text" id="username">
+                <span class="callout">Only letters,numbers,underscores(_) and hyphens (-) allowed!</span>
+            </label>
+        </form>
+    </article>
+</section>
+<section class="transition_animate">
+    <style>
+        input:not(:focus) + .callout1 {
+            transform: scale(0);
+        }
+        input:focus + .callout1 {
+            animation: elastic-grow .5s;
+        }
+        .callout1 {
+            display: inline-block;
+            transform-origin: 1.4em -.4em;
+        }
+        @keyframes elastic-grow {
+            from {transform: scale(0);}
+            70% {
+                transform :scale(1.1);
+                animation-timing-function: cubic-bezier(.1,.25,1,.25); /*反向的ease*/
+            }
+        }
+    </style>
+    <article>
+        <form>
+            <label for="username1">
+                Your username: <input type="text" id="username1">
+                <span class="callout1">Only letters,numbers,underscores(_) and hyphens (-) allowed!</span>
+            </label>
+        </form>
+    </article>
+</section>
+
+<section>
+    <style>
+        .loader {
+            width: 100px; height: 100px;
+            background: url(img/loader.png) 0 0;
+        /* 把文本隐藏起来 */
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        @keyframes loader {
+            to { background-position: -800px 0; }
+        }
+        .loader {
+            width: 100px; height: 100px;
+            background: url(img/loader.png) 0 0;
+            /*animation: loader 1s infinite linear;*/
+            animation: loader 1s infinite steps(8);
+            /* 把文本隐藏起来 */
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+    <div class="loader">Loading...</div>
+</section>
+</body>
+</html>
