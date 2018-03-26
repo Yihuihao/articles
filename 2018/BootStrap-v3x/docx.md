@@ -150,4 +150,45 @@
 </body>
 </html>
 ````
+4.表格
+①基本实例：为任意 `<table>` 标签添加 `.table` 类，可以为其赋予基本的样式——少量的内补（padding）和水平方向的分隔线。
+````
+<table class="table">
+  ...
+</table>
+````
+②条纹表格：添加类 `.table-striped`;
+````
+<table class="table table-striped">
+  ...
+</table>
+````
 
+③带边框的表格：添加类 `.table-bordered`;
+````
+<table class="table table-bordered">
+  ...
+</table>
+````
+④鼠标悬停：添加类 `.table-hover`;
+````
+<table class="table table-hover">
+  ...
+</table>
+````
+⑤紧缩表格：添加类 `.table-condensed`,可以让表格更加紧凑，单元格中的内补（padding）均会减半;
+````
+<table class="table table-condensed">
+  ...
+</table>
+````
+⑥状态了：通过状态类可以为行或单元格设置颜色
+
+⑦响应式表格：将任何 `.table` 元素包裹在 `.table-responsive` 元素内，可以创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动；当屏幕大于768px宽度时，水平滚动条消失。
+````
+<div class="table-responsive">
+  <table class="table">
+    ...
+  </table>
+</div>
+````
