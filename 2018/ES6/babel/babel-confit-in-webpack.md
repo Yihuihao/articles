@@ -1,4 +1,4 @@
-# Babel在webpack中的配置使用
+### Babel在webpack中的配置使用
 ①安装：使用npm安装
 ````
 npm install --save-dev babel-loader babel-core
@@ -25,5 +25,5 @@ npm install babel-preset-env --save-dev
     ]
   }
   ````
-# 参考链接
-[https://babeljs.cn/docs/setup/#installation]
+##### 参考链接
+[Babel](https://babeljs.cn/docs/setup/#installation)
