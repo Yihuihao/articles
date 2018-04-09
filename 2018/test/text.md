@@ -31,6 +31,7 @@ nvm use 版本号 使用某一个node版本
 [http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 
 3.babel
+
 [https://babeljs.cn/docs/usage/polyfill](https://babeljs.cn/docs/usage/polyfill)
 
 [https://www.imooc.com/article/21866](https://www.imooc.com/article/21866)
@@ -39,7 +40,9 @@ nvm use 版本号 使用某一个node版本
 1.Atom
 
 [https://atom.io](https://atom.io)
+
 2.ESLint
+
 [http://eslint.cn/docs/user-guide/configuring](http://eslint.cn/docs/user-guide/configuring)
 
 ### 基础知识
@@ -52,6 +55,7 @@ nvm use 版本号 使用某一个node版本
 [http://sass.bootcss.com](http://sass.bootcss.com)
 
 3.Vue.js
+
 [https://cn.vuejs.org](https://cn.vuejs.org)
 
 ### 业务开发流程
