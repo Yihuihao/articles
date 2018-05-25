@@ -138,8 +138,36 @@ nvm use 版本号 使用某一个node版本
 
 
 2.JS组件设计
+    
+    1.设计原则
+        a.高内聚低耦合
+            高内聚：尽量让组件的功能受控于组件本身，而不是依赖于其他组件；
+            低耦合：组件之间抽象功能，但组件之间没有关联，复用抽象的js功能。
+        b.周期性迭代
+        
+    2.设计方法
+        a.先整体后部分再颗粒化
+        b.尽可能抽象
 
 3.自适应
+    
+    1.基本概念
+        a.CSS像素、设备像素、逻辑像素、设备像素比
+            https://github.com/jawil/blog/issues/21
+            css像素==逻辑像素--px
+            设备像素==物理像素
+            设备像素比==逻辑像素/设备像素
+        b.viewport
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                
+                viewport:layout-viewport、visual-viewport、ideal-viewport
+        c.rem
+            rem相对于html标签
+            em相对于父元素
+    2.工作原理
+        a.利用viewport和设备像素比调整标准像素
+            大部分设计稿尺寸：320*568---iPhone5
+        b.利用px2rem自动转换css单位
 
 4.SPA设计
 
