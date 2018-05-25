@@ -23,4 +23,5 @@ box-sizing允许以特定的方式定义匹配某个区域的特定元素。
 
 # 参考链接
 ·[盒模型：https://zhuanlan.zhihu.com/p/25321647](https://zhuanlan.zhihu.com/p/25321647)
-·[box-sizing](www.w3school.com.cn/cssref/pr_box-sizing.asp)
+
+·[box-sizing](http://www.w3school.com.cn/cssref/pr_box-sizing.asp)
