@@ -124,3 +124,5 @@
 ·[javascript判断移动端访问设备](http://www.jb51.net/article/60786.htm)
 
 ·[移动web开发--页面头部META总结](https://www.bbsmax.com/A/E35p77AJvX/)
+
+·[使用Flexible实现手淘H5页面的终端适配 ](www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
